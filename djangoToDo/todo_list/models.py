@@ -7,6 +7,7 @@ class ToDoItem(models.Model):
 
     class Meta:
         verbose_name = "ToDo Item"
+        ordering = ("id",)
 
     def __str__(self) -> str:
         return self.title
