@@ -9,10 +9,13 @@
     <body>
         {% include "components/navbar.html" %}
         {% block body %}
-        Base Body
+            Base Body
         {% endblock body %}
         <footer>
             &copy; Django TODO app
+            {% block footer %}
+
+            {% endblock footer %}
         </footer>
     </body>
 </html>
